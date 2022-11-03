@@ -39,6 +39,22 @@ with open('ramptocsv.csv', mode='r') as file:
             x = ', '.join(lines)
             x.replace("\n","")
             writerz.writerow([x])
+            newlist.append(x)
+    count = 0
+    for i in newlist:
+        count =+ 1
+        secondlist.append(i)
+    print(count, secondlist, sep="\n")
+        # newlist[99]
+      
+
+
+# Goal here is to loop over on a certain amount of rows
+
+
+
+
+
 
 # df = pd.read_csv("ramptocsv2.csv")
 # with open("my_markdown.md", 'w') as md:
